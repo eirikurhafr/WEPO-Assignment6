@@ -1,3 +1,122 @@
 @import "variables.less";
 
 // EDIT BELOW THIS LINE
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 100%;
+    background-color: @thulianPink; 
+    #right-aside{
+        display: grid;
+        height: 100%;
+        background-color: @laurelGreen;
+        border-left: 8px solid @desaturatedCyan;
+
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: min-content min-content;
+        padding: 40px;
+
+        img{
+            height: 150px;
+            background-size: 150px 150px;
+        }
+        p{
+            
+            word-wrap: break-word;
+            text-align: center;
+            hyphens: auto;
+        }
+    }
+
+    #main {
+        background-color: @spanishPink; 
+        display: grid;
+        
+        #primary-nav{
+            display: grid;
+            background-color: @persianPink;
+            border-bottom: 8px solid @thulianPink;
+            justify-items: center;
+            align-items: center;
+        }
+
+        #secondary-nav{
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            ul{
+                display: grid;
+                justify-items: center;
+                grid-template-columns: 1fr 1fr 1fr ;
+                li{
+                    font-size: 1.5em;
+                    a{
+                        font-weight: bold;
+                        color: @white;
+                    }
+                }
+            }
+        }
+
+        .cities {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-gap: 6px;
+            padding: 2px;
+            background-color: @thulianPink; 
+            justify-content: center;
+            align-items: center;
+
+            li {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+                padding: 4px;
+                background-color: @white; 
+                padding-left: 10%;
+                padding-right: 10%;
+                
+
+                .city-img{
+                    height: 150px;
+                    width: 250px;
+                    background-size: 250px 150px;
+                }
+            }
+        }
+
+        .banner-area{
+            #banner{
+                display: grid;
+                grid-template-rows: 1fr;
+                justify-content: center;
+                align-items: center;
+                padding: 40px;
+                font-size: 1.5em;
+                color: @white;
+                .city-previews{
+                    padding: 40px;
+                    
+                    display: grid;
+                    grid-template-columns: 150px 150px 150px 150px;
+                    grid-template-rows: 150px;
+                    grid-gap: 80px;
+
+                    li{
+                        background-size: 150px 150px;
+                        border-radius: 150px;
+                    }
+                }
+            }
+
+            #right-aside-inside{
+                display: none;
+            }
+        }
+
+    }
+}

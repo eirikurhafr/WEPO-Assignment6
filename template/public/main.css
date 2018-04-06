@@ -22,3 +22,102 @@
   font-weight: 700;
   src: local('NanumGothic Bold'), local('NanumGothic-Bold'), url(https://fonts.gstatic.com/s/nanumgothic/v7/PN_oRfi-oW3hYwmKDpxS7F_LQv3LyVsj.ttf) format('truetype');
 }
+body {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  grid-template-rows: 100%;
+  background-color: #E06C9F;
+}
+body #right-aside {
+  display: grid;
+  height: 100%;
+  background-color: #B5BFA1;
+  border-left: 8px solid #6E9887;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: min-content min-content;
+  padding: 40px;
+}
+body #right-aside img {
+  height: 150px;
+  background-size: 150px 150px;
+}
+body #right-aside p {
+  word-wrap: break-word;
+  text-align: center;
+  hyphens: auto;
+}
+body #main {
+  background-color: #EDBFB7;
+  display: grid;
+}
+body #main #primary-nav {
+  display: grid;
+  background-color: #F283B6;
+  border-bottom: 8px solid #E06C9F;
+  justify-items: center;
+  align-items: center;
+}
+body #main #secondary-nav {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+body #main #secondary-nav ul {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr ;
+}
+body #main #secondary-nav ul li {
+  font-size: 1.5em;
+}
+body #main #secondary-nav ul li a {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+body #main .cities {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-gap: 6px;
+  padding: 2px;
+  background-color: #E06C9F;
+  justify-content: center;
+  align-items: center;
+}
+body #main .cities li {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 4px;
+  background-color: #FFFFFF;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+body #main .cities li .city-img {
+  height: 150px;
+  width: 250px;
+  background-size: 250px 150px;
+}
+body #main .banner-area #banner {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-size: 1.5em;
+  color: #FFFFFF;
+}
+body #main .banner-area #banner .city-previews {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: 150px;
+  grid-gap: 80px;
+}
+body #main .banner-area #banner .city-previews li {
+  background-size: 150px 150px;
+  border-radius: 150px;
+}
+body #main .banner-area #right-aside-inside {
+  display: none;
+}
